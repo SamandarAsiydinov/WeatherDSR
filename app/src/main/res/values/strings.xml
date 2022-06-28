@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loc">Locations</string>
+    <string name="triggers">Triggers</string>
+    <string name="set">Settings</string>
+    <string name="todo">todo</string>
+    <string name="all">All</string>
+    <string name="favorite">Favorites</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/allFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.all.AllFragment"
+        android:label="fragment_all"
+        tools:layout="@layout/fragment_all" >
+        <action
+            android:id="@+id/action_allFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationsFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.locations.LocationsFragment"
+        android:label="fragment_locations"
+        tools:layout="@layout/fragment_locations" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/triggersFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.triggers.TriggersFragment"
+        android:label="fragment_triggers"
+        tools:layout="@layout/fragment_triggers" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.sdk.weatherapp.presentation.ui.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>

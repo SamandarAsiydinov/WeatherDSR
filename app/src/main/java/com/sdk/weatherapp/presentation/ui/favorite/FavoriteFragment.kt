@@ -7,26 +7,33 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.sdk.weatherapp.R
+import com.sdk.weatherapp.databinding.FragmentFavoriteBinding
 
 class FavoriteFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = FavoriteFragment()
-    }
-
-    private lateinit var viewModel: FavoriteViewModel
+    private var _binding: FragmentFavoriteBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_favorite, container, false)
+    ): View {
+        _binding = FragmentFavoriteBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(FavoriteViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initViews(view)
     }
 
+    private fun initViews(view: View) {
+
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

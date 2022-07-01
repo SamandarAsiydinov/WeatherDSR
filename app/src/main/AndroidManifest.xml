@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sdk.weatherapp">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".presentation.BaseApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,6 +17,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeatherApp"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAoXr-t41CdlMLpH2c11oUKlWF6YDUkO_Q" />
+
         <activity
             android:name=".presentation.activity.MainActivity"
             android:exported="true">

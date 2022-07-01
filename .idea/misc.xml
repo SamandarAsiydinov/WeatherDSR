@@ -6,8 +6,11 @@
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/drawable/nav_selected.xml" value="0.2765" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/fragment_all.xml" value="0.2863247863247863" />
+        <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/fragment_detail.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/fragment_favorite.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/fragment_locations.xml" value="0.2863247863247863" />
+        <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/fragment_main.xml" value="0.2863247863247863" />
+        <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/fragment_maps.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/menu/bottom_menu.xml" value="0.2863247863247863" />
       </map>
     </option>

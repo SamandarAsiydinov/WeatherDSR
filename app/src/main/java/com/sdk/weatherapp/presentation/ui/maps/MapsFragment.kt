@@ -13,6 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.sdk.weatherapp.R
+import com.sdk.weatherapp.data.util.toast
 import com.sdk.weatherapp.presentation.activity.MainActivity
 
 class MapsFragment : Fragment() {
@@ -21,6 +22,7 @@ class MapsFragment : Fragment() {
         val sydney = LatLng(-34.0, 151.0)
         googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+
     }
 
     override fun onCreateView(
@@ -35,6 +37,7 @@ class MapsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
+
 
         (activity as MainActivity).supportActionBar?.hide()
     }

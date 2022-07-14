@@ -9,4 +9,5 @@
     <string name="all">All</string>
     <string name="favorite">Favorites</string>
     <string name="any">You don\'t have any added locations.\nTap the button below to get started</string>
+    <string name="s">Search Location</string>
 </resources>

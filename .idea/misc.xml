@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/drawable/edit_shape.xml" value="0.294" />
+        <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.294" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/drawable/nav_selected.xml" value="0.2765" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.2863247863247863" />
         <entry key="..\:/AndroidProjects/MyAndroid/WeatherApp/app/src/main/res/layout/fragment_all.xml" value="0.2863247863247863" />
